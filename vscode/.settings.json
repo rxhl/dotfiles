@@ -1,6 +1,6 @@
 {
-  "window.zoomLevel": -1,
-  "editor.fontSize": 15,
+  "window.zoomLevel": 0,
+  "editor.fontSize": 13.5,
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.shell.osx": "/bin/bash",
   "editor.tabSize": 2,
@@ -32,6 +32,23 @@
   "workbench.iconTheme": "vscode-icons",
   "vsicons.dontShowNewVersionMessage": true,
   "kite.showWelcomeNotificationOnStartup": false,
-  "python.dataScience.sendSelectionToInteractiveWindow": false,
-  "python.linting.pylintArgs": ["--load-plugins", "pylint-flask"]
+  "python.linting.pylintArgs": ["--load-plugins", "pylint-flask"],
+  "appService.showSavePrompt": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "C_Cpp.updateChannel": "Insiders",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "azureFunctions.showProjectWarning": false,
+  "jupyter.sendSelectionToInteractiveWindow": false,
+  "asa.enableFeedbackPrompt": false
 }
