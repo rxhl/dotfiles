@@ -1,8 +1,7 @@
 {
-  "window.zoomLevel": 0,
   "editor.fontSize": 13.5,
   "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.shell.osx": "/bin/bash",
+  "terminal.integrated.defaultProfile.osx": "/bin/bash",
   "editor.tabSize": 2,
   "cSpell.userWords": ["gravatar", "searchresult"],
   "liveServer.settings.donotShowInfoMsg": true,
@@ -48,7 +47,56 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[python]": {
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": null,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+  "python.formatting.blackArgs": ["--line-length", "79"],
+  "python.formatting.provider": "black",
   "azureFunctions.showProjectWarning": false,
   "jupyter.sendSelectionToInteractiveWindow": false,
-  "asa.enableFeedbackPrompt": false
+  "asa.enableFeedbackPrompt": false,
+  "tabnine.experimentalAutoImports": true,
+  "aws.profile": "profile:default",
+  "yaml.customTags": [
+    "!Equals sequence",
+    "!FindInMap sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!Join sequence",
+    "!Ref",
+    "!Select sequence",
+    "!Split sequence",
+    "!Sub",
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!Base64",
+    "!Join",
+    "!Cidr",
+    "!Sub sequence",
+    "!ImportValue sequence",
+    "!Select",
+    "!Split"
+  ],
+  "workbench.editor.wrapTabs": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "yaml.schemas": {},
+  "redhat.telemetry.enabled": false
 }
