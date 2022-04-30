@@ -1,65 +1,28 @@
 {
-  "editor.fontSize": 13.5,
-  "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.defaultProfile.osx": "/bin/bash",
-  "editor.tabSize": 2,
-  "cSpell.userWords": ["gravatar", "searchresult"],
-  "liveServer.settings.donotShowInfoMsg": true,
-  "explorer.confirmDelete": false,
-  "editor.wordWrap": "on",
-  "editor.formatOnSave": true,
+  "appService.showSavePrompt": false,
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.insertSpaces": true
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "python.linting.pylintArgs": [
+    "--load-plugins",
+    "pylint-flask"
+  ],
+  "workbench.editor.wrapTabs": true,
+  "asa.enableFeedbackPrompt": false,
   "prettier.singleQuote": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "emmet.syntaxProfiles": {
-    "javascript": "jsx",
-    "javascript": "html"
-  },
-  "editor.wordWrapColumn": 50,
-  "explorer.confirmDragAndDrop": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "gitlens.currentLine.scrollable": false,
-  "liveSassCompile.settings.formats": [
-    {
-      "format": "compressed",
-      "extensionName": ".min.css",
-      "savePath": "/dist/css"
-    }
-  ],
-  "liveSassCompile.settings.generateMap": false,
-  "workbench.iconTheme": "vscode-icons",
-  "vsicons.dontShowNewVersionMessage": true,
-  "kite.showWelcomeNotificationOnStartup": false,
-  "python.linting.pylintArgs": ["--load-plugins", "pylint-flask"],
-  "appService.showSavePrompt": false,
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "C_Cpp.updateChannel": "Insiders",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[python]": {
-    "editor.detectIndentation": false,
-    "editor.defaultFormatter": null,
-    "editor.insertSpaces": true,
-    "editor.tabSize": 4
-  },
-  "python.formatting.blackArgs": ["--line-length", "79"],
-  "python.formatting.provider": "black",
-  "azureFunctions.showProjectWarning": false,
-  "jupyter.sendSelectionToInteractiveWindow": false,
-  "asa.enableFeedbackPrompt": false,
-  "tabnine.experimentalAutoImports": true,
-  "aws.profile": "profile:default",
+  "editor.tabSize": 2,
   "yaml.customTags": [
     "!Equals sequence",
     "!FindInMap sequence",
@@ -89,14 +52,69 @@
     "!Select",
     "!Split"
   ],
-  "workbench.editor.wrapTabs": true,
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
+  "cSpell.userWords": [
+    "gravatar",
+    "searchresult"
+  ],
+  "liveSassCompile.settings.generateMap": false,
+  "workbench.iconTheme": "vscode-icons",
+  "liveSassCompile.settings.formats": [
+    {
+      "savePath": "/dist/css",
+      "format": "compressed",
+      "extensionName": ".min.css"
+    }
+  ],
+  "editor.accessibilitySupport": "off",
+  "files.exclude": {
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.classpath": true,
+    "**/.factorypath": true
   },
+  "redhat.telemetry.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "terminal.external.osxExec": "iTerm.app",
+  "C_Cpp.updateChannel": "Insiders",
+  "python.formatting.provider": "black",
+  "kite.showWelcomeNotificationOnStartup": false,
+  "editor.wordWrapColumn": 50,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "jupyter.sendSelectionToInteractiveWindow": false,
+  "yaml.schemas": {},
+  "azureFunctions.showProjectWarning": false,
+  "aws.profile": "profile:default",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
   },
-  "yaml.schemas": {},
-  "redhat.telemetry.enabled": false
+  "terminal.integrated.defaultProfile.osx": "/bin/bash",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontSize": 13.5,
+  "json.schemas": [],
+  "editor.formatOnSave": true,
+  "gitlens.currentLine.scrollable": false,
+  "explorer.confirmDelete": false,
+  "editor.wordWrap": "on",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.formatting.blackArgs": [
+    "--line-length",
+    "79"
+  ],
+  "liveServer.settings.donotShowInfoMsg": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.suggestSelection": "first",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "tabnine.experimentalAutoImports": true,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "bracket-pair-colorizer-2.depreciation-notice": false
 }

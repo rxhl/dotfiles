@@ -43,4 +43,4 @@ function parse_git_branch() {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 
-PS1="\d, \@\[$(tput sgr0)\] 🎃 \[${bold}\]\[$green\]\w\[$white\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$magenta\]\$(parse_git_branch)\[$white\]\n\$ \[$reset\]"
+PS1="🎃 \[${bold}\]\[$green\]\w\[$white\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$magenta\]\$(parse_git_branch)\[$white\] \$ \[$reset\]"
